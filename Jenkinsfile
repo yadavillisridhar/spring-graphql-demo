@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building the project...' // A simple step to print a message
                 // Add your build commands here, e.g., sh 'mvn clean install'
-                sh './gradlew clean build'
+                sh 'mvn clean build'
             }
         }
 
@@ -14,7 +14,7 @@ pipeline {
                         steps {
                             echo 'Running Sonar...'
                             // Add your test commands here, e.g., sh 'mvn test'
-                            sh './gradlew compileJava sonar'
+                            sh '.mvn compileJava sonar'
                         }
                     }
 
