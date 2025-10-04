@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building the project...' // A simple step to print a message
                 // Add your build commands here, e.g., sh 'mvn clean install'
-                sh 'mvn clean build'
+                sh 'mvn clean compile'
             }
         }
 
@@ -14,7 +14,7 @@ pipeline {
                         steps {
                             echo 'Running Sonar...'
                             // Add your test commands here, e.g., sh 'mvn test'
-                            sh '.mvn compileJava sonar'
+                            sh '.mvn compile sonar'
                         }
                     }
 
