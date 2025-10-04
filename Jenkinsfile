@@ -18,7 +18,7 @@ pipeline {
                         }
                     }
 
-        stage('Manual Approval for Deployment') {
+        stage('Manual Approval/Rejection for Deployment') {
             steps {
                 script {
                     def userInput =
