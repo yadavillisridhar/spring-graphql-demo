@@ -14,7 +14,7 @@ pipeline {
                         steps {
                             echo 'Running Sonar...'
                             // Add your test commands here, e.g., sh 'mvn test'
-                            sh 'mvn compile sonar'
+                            sh 'mvn compile sonar:sonar'
                         }
                     }
 
