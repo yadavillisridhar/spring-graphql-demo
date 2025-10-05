@@ -8,10 +8,10 @@ import java.util.Optional;
 
 public interface StudentsService {
 
-    public List<Students> getStudents();
+    List<Students> getStudents();
 
-    public Optional<Students> getStudent(Integer studentId);
+    Optional<Students> getStudent(Integer studentId);
 
-    public Students addStudent(StudentRequest studentRequest);
+    Students addStudent(StudentRequest studentRequest);
 
 }
