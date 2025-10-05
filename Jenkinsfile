@@ -14,7 +14,7 @@ pipeline {
                         steps {
                             echo 'Running Sonar...'
                             // Add your test commands here, e.g., sh 'mvn test'
-                            sh 'mvn compile sonar:sonar'
+                            sh 'mvn compile sonar:sonar -Dsonar.projectKey=spring-graphql-demo -Dsonar.projectName=spring-graphql-demo'
                         }
                     }
 
